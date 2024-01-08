@@ -5,6 +5,6 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
 contract Ftoken is ERC20, ERC20Burnable {
     constructor() ERC20("FTOKEN", "FTK") {
-        _mint(msg.sender, 100000000000000000000000000000000);
+        _mint(msg.sender, 10000000000000 * (10 ** decimals()));
     }
 }
