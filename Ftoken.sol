@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Ftoken is ERC20, ERC20Burnable, ERC20Pausable, Ownable {
     constructor() ERC20("FTOKEN", "FTK") {
-        _mint(msg.sender, 10000000000000 * (10 ** decimals()));
+        _mint(msg.sender, 100000000000000 * (10 ** decimals()));
     }
 
     function pause() public onlyOwner {
